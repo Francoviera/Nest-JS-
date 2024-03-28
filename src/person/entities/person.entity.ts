@@ -1,8 +1,7 @@
-import { Person } from "src/person/entities/person.entity"
 import { Column, Entity } from "typeorm"
 
 @Entity()
-export class Shift {
+export class Person {
 
     @Column({primary: true, generated: true})
     id: number
@@ -11,8 +10,8 @@ export class Shift {
     name: string
 
     @Column()
-    person: Person
+    phone: number
 
     @Column()
-    description: string
+    mail: string
 }
